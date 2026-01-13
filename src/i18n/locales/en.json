@@ -1,0 +1,138 @@
+{
+  "nav": {
+    "home": "Home",
+    "activities": "Activities",
+    "excursions": "Excursions",
+    "reviews": "Reviews",
+    "contact": "Contact",
+    "bookNow": "Book Now"
+  },
+  "hero": {
+    "title": "Discover the Magic of Marrakech",
+    "subtitle": "Unforgettable experiences in the heart of Morocco. From desert adventures to traditional hammams, create memories that last a lifetime.",
+    "searchPlaceholder": "Search activities...",
+    "exploreActivities": "Explore Activities",
+    "viewExcursions": "View Excursions"
+  },
+  "home": {
+    "whyChooseUs": "Why Choose Us",
+    "localExperts": "Local Experts",
+    "localExpertsDesc": "Our guides are born and raised in Marrakech, offering authentic insights",
+    "bestPrices": "Best Prices",
+    "bestPricesDesc": "Direct booking means no middleman fees - guaranteed best rates",
+    "available247": "24/7 Support",
+    "available247Desc": "We're always here to help, before, during, and after your adventure",
+    "popularActivities": "Popular Activities",
+    "popularActivitiesDesc": "Experience the best of Marrakech with our handpicked selection of activities",
+    "viewAllActivities": "View All Activities",
+    "discoverExcursions": "Discover Excursions",
+    "discoverExcursionsDesc": "Venture beyond Marrakech and explore Morocco's breathtaking landscapes",
+    "viewAllExcursions": "View All Excursions",
+    "whatClientsSay": "What Our Clients Say",
+    "readyForAdventure": "Ready for Your Marrakech Adventure?",
+    "readyForAdventureDesc": "Let us help you create unforgettable memories in the Red City",
+    "startPlanning": "Start Planning Your Trip"
+  },
+  "activities": {
+    "title": "Activities in Marrakech",
+    "subtitle": "Discover unforgettable experiences in the heart of Morocco",
+    "searchPlaceholder": "Search activities...",
+    "allCategories": "All Categories",
+    "allPrices": "All Prices",
+    "allDurations": "All Durations",
+    "noResults": "No activities found matching your criteria.",
+    "clearFilters": "Clear filters"
+  },
+  "excursions": {
+    "title": "Excursions from Marrakech",
+    "subtitle": "Explore the breathtaking landscapes beyond the Red City"
+  },
+  "card": {
+    "from": "From",
+    "perPerson": "/person",
+    "viewDetails": "View Details",
+    "bookNow": "Book Now",
+    "duration": "Duration",
+    "included": "What's Included",
+    "highlights": "Highlights",
+    "bookThisActivity": "Book This Activity",
+    "bookThisExcursion": "Book This Excursion"
+  },
+  "reservation": {
+    "title": "Book Your Experience",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "John Doe",
+    "email": "Email Address",
+    "emailPlaceholder": "john@example.com",
+    "phone": "Phone / WhatsApp",
+    "phonePlaceholder": "+212 600 000 000",
+    "date": "Preferred Date",
+    "selectDate": "Select a date",
+    "people": "Number of People",
+    "message": "Additional Message",
+    "messagePlaceholder": "Any special requests or questions...",
+    "submit": "Submit Reservation",
+    "success": "Reservation submitted!",
+    "successDesc": "We'll contact you shortly to confirm your booking."
+  },
+  "reviews": {
+    "title": "Customer Reviews",
+    "subtitle": "See what our guests are saying about their Marrakech adventures",
+    "tripadvisor": "See All Reviews on TripAdvisor",
+    "averageRating": "Average Rating",
+    "totalReviews": "Total Reviews",
+    "recommended": "Recommended"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We'd love to hear from you. Get in touch with our team.",
+    "getInTouch": "Get in Touch",
+    "formTitle": "Send us a Message",
+    "name": "Your Name",
+    "namePlaceholder": "John Doe",
+    "email": "Email Address",
+    "emailPlaceholder": "john@example.com",
+    "subject": "Subject",
+    "subjectPlaceholder": "How can we help?",
+    "message": "Message",
+    "messagePlaceholder": "Tell us about your travel plans...",
+    "send": "Send Message",
+    "address": "Address",
+    "phone": "Phone",
+    "emailLabel": "Email",
+    "hours": "Hours",
+    "hoursValue": "Mon-Sun: 8AM - 10PM"
+  },
+  "footer": {
+    "description": "Your trusted partner for authentic Moroccan experiences. Discover the magic of Marrakech with our expert-guided tours and activities.",
+    "quickLinks": "Quick Links",
+    "experiences": "Experiences",
+    "contactUs": "Contact Us",
+    "allRightsReserved": "All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "notFound": "Page not found",
+    "backHome": "Back to Home"
+  },
+  "categories": {
+    "adventure": "Adventure",
+    "wellness": "Wellness",
+    "culture": "Culture",
+    "nature": "Nature",
+    "desert": "Desert"
+  },
+  "prices": {
+    "budget": "Budget (Under €50)",
+    "mid": "Mid-Range (€50-€100)",
+    "premium": "Premium (€100+)"
+  },
+  "durations": {
+    "half": "Half Day",
+    "full": "Full Day",
+    "multi": "Multi-Day"
+  }
+}

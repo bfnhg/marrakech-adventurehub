@@ -1,0 +1,138 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "activities": "Activités",
+    "excursions": "Excursions",
+    "reviews": "Avis",
+    "contact": "Contact",
+    "bookNow": "Réserver"
+  },
+  "hero": {
+    "title": "Découvrez la Magie de Marrakech",
+    "subtitle": "Des expériences inoubliables au cœur du Maroc. Des aventures dans le désert aux hammams traditionnels, créez des souvenirs qui durent toute une vie.",
+    "searchPlaceholder": "Rechercher des activités...",
+    "exploreActivities": "Explorer les Activités",
+    "viewExcursions": "Voir les Excursions"
+  },
+  "home": {
+    "whyChooseUs": "Pourquoi Nous Choisir",
+    "localExperts": "Experts Locaux",
+    "localExpertsDesc": "Nos guides sont nés et ont grandi à Marrakech, offrant des perspectives authentiques",
+    "bestPrices": "Meilleurs Prix",
+    "bestPricesDesc": "Réservation directe signifie pas de frais d'intermédiaire - meilleurs tarifs garantis",
+    "available247": "Support 24/7",
+    "available247Desc": "Nous sommes toujours là pour vous aider, avant, pendant et après votre aventure",
+    "popularActivities": "Activités Populaires",
+    "popularActivitiesDesc": "Découvrez le meilleur de Marrakech avec notre sélection d'activités triées sur le volet",
+    "viewAllActivities": "Voir Toutes les Activités",
+    "discoverExcursions": "Découvrir les Excursions",
+    "discoverExcursionsDesc": "Aventurez-vous au-delà de Marrakech et explorez les paysages à couper le souffle du Maroc",
+    "viewAllExcursions": "Voir Toutes les Excursions",
+    "whatClientsSay": "Ce Que Disent Nos Clients",
+    "readyForAdventure": "Prêt pour Votre Aventure à Marrakech?",
+    "readyForAdventureDesc": "Laissez-nous vous aider à créer des souvenirs inoubliables dans la Ville Rouge",
+    "startPlanning": "Commencer à Planifier Votre Voyage"
+  },
+  "activities": {
+    "title": "Activités à Marrakech",
+    "subtitle": "Découvrez des expériences inoubliables au cœur du Maroc",
+    "searchPlaceholder": "Rechercher des activités...",
+    "allCategories": "Toutes les Catégories",
+    "allPrices": "Tous les Prix",
+    "allDurations": "Toutes les Durées",
+    "noResults": "Aucune activité trouvée correspondant à vos critères.",
+    "clearFilters": "Effacer les filtres"
+  },
+  "excursions": {
+    "title": "Excursions depuis Marrakech",
+    "subtitle": "Explorez les paysages à couper le souffle au-delà de la Ville Rouge"
+  },
+  "card": {
+    "from": "À partir de",
+    "perPerson": "/pers.",
+    "viewDetails": "Voir Détails",
+    "bookNow": "Réserver",
+    "duration": "Durée",
+    "included": "Ce qui est inclus",
+    "highlights": "Points Forts",
+    "bookThisActivity": "Réserver cette Activité",
+    "bookThisExcursion": "Réserver cette Excursion"
+  },
+  "reservation": {
+    "title": "Réservez Votre Expérience",
+    "fullName": "Nom Complet",
+    "fullNamePlaceholder": "Jean Dupont",
+    "email": "Adresse Email",
+    "emailPlaceholder": "jean@exemple.com",
+    "phone": "Téléphone / WhatsApp",
+    "phonePlaceholder": "+212 600 000 000",
+    "date": "Date Souhaitée",
+    "selectDate": "Sélectionnez une date",
+    "people": "Nombre de Personnes",
+    "message": "Message Additionnel",
+    "messagePlaceholder": "Demandes spéciales ou questions...",
+    "submit": "Envoyer la Réservation",
+    "success": "Réservation envoyée!",
+    "successDesc": "Nous vous contacterons sous peu pour confirmer votre réservation."
+  },
+  "reviews": {
+    "title": "Avis Clients",
+    "subtitle": "Découvrez ce que nos clients disent de leurs aventures à Marrakech",
+    "tripadvisor": "Voir Tous les Avis sur TripAdvisor",
+    "averageRating": "Note Moyenne",
+    "totalReviews": "Avis Total",
+    "recommended": "Recommandé"
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Nous serions ravis d'avoir de vos nouvelles. Contactez notre équipe.",
+    "getInTouch": "Nous Contacter",
+    "formTitle": "Envoyez-nous un Message",
+    "name": "Votre Nom",
+    "namePlaceholder": "Jean Dupont",
+    "email": "Adresse Email",
+    "emailPlaceholder": "jean@exemple.com",
+    "subject": "Sujet",
+    "subjectPlaceholder": "Comment pouvons-nous vous aider?",
+    "message": "Message",
+    "messagePlaceholder": "Parlez-nous de vos projets de voyage...",
+    "send": "Envoyer le Message",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "emailLabel": "Email",
+    "hours": "Horaires",
+    "hoursValue": "Lun-Dim: 8h - 22h"
+  },
+  "footer": {
+    "description": "Votre partenaire de confiance pour des expériences marocaines authentiques. Découvrez la magie de Marrakech avec nos visites guidées par des experts.",
+    "quickLinks": "Liens Rapides",
+    "experiences": "Expériences",
+    "contactUs": "Contactez-Nous",
+    "allRightsReserved": "Tous droits réservés.",
+    "privacyPolicy": "Politique de Confidentialité",
+    "termsOfService": "Conditions d'Utilisation"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "notFound": "Page non trouvée",
+    "backHome": "Retour à l'Accueil"
+  },
+  "categories": {
+    "adventure": "Aventure",
+    "wellness": "Bien-être",
+    "culture": "Culture",
+    "nature": "Nature",
+    "desert": "Désert"
+  },
+  "prices": {
+    "budget": "Économique (Moins de 50€)",
+    "mid": "Moyen (50€-100€)",
+    "premium": "Premium (100€+)"
+  },
+  "durations": {
+    "half": "Demi-Journée",
+    "full": "Journée Complète",
+    "multi": "Plusieurs Jours"
+  }
+}
