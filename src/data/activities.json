@@ -1,0 +1,293 @@
+{
+  "activities": [
+    {
+      "id": "quad-biking",
+      "slug": "quad-biking-palm-grove",
+      "title": "Quad Biking Adventure",
+      "shortDescription": "Explore the Marrakech palm grove and Berber villages on a thrilling quad bike adventure.",
+      "fullDescription": "Experience the thrill of riding through the stunning palm groves of Marrakech on a powerful quad bike. This adventure takes you through traditional Berber villages, olive groves, and scenic desert landscapes. Our experienced guides ensure your safety while providing an unforgettable adrenaline-pumping experience.",
+      "category": "Adventure",
+      "price": 45,
+      "currency": "EUR",
+      "duration": "2 hours",
+      "durationMinutes": 120,
+      "rating": 4.8,
+      "reviewCount": 342,
+      "image": "activity-quad",
+      "highlights": [
+        "Professional guide and safety equipment",
+        "Visit authentic Berber villages",
+        "Photo stops at scenic viewpoints",
+        "Hotel pickup and drop-off included"
+      ],
+      "included": [
+        "Quad bike rental",
+        "Helmet and goggles",
+        "Experienced guide",
+        "Mint tea at Berber village",
+        "Hotel transfers"
+      ],
+      "maxGroupSize": 12,
+      "languages": ["English", "French", "Arabic", "Spanish"]
+    },
+    {
+      "id": "hammam-spa",
+      "slug": "traditional-hammam-spa",
+      "title": "Traditional Hammam & Spa",
+      "shortDescription": "Indulge in an authentic Moroccan hammam experience with traditional rituals.",
+      "fullDescription": "Immerse yourself in centuries-old Moroccan wellness traditions at our luxurious hammam. This rejuvenating experience includes a steam bath, black soap exfoliation, ghassoul clay mask, and a relaxing massage with argan oil. Leave feeling completely renewed and pampered.",
+      "category": "Wellness",
+      "price": 55,
+      "currency": "EUR",
+      "duration": "2.5 hours",
+      "durationMinutes": 150,
+      "rating": 4.9,
+      "reviewCount": 528,
+      "image": "activity-hammam",
+      "highlights": [
+        "Authentic hammam steam bath",
+        "Black soap exfoliation",
+        "Ghassoul clay body mask",
+        "Relaxing argan oil massage"
+      ],
+      "included": [
+        "All spa treatments",
+        "Towels and flip-flops",
+        "Mint tea and pastries",
+        "Private changing room",
+        "Robes provided"
+      ],
+      "maxGroupSize": 2,
+      "languages": ["English", "French", "Arabic"]
+    },
+    {
+      "id": "hot-air-balloon",
+      "slug": "hot-air-balloon-sunrise",
+      "title": "Sunrise Hot Air Balloon",
+      "shortDescription": "Float above Marrakech at sunrise with breathtaking views of the Atlas Mountains.",
+      "fullDescription": "Start your day with an unforgettable sunrise hot air balloon flight over the beautiful landscapes surrounding Marrakech. Drift peacefully above palm groves, traditional villages, and enjoy panoramic views of the snow-capped Atlas Mountains as the sun rises.",
+      "category": "Adventure",
+      "price": 180,
+      "currency": "EUR",
+      "duration": "3.5 hours",
+      "durationMinutes": 210,
+      "rating": 4.9,
+      "reviewCount": 289,
+      "image": "activity-balloon",
+      "highlights": [
+        "1-hour balloon flight at sunrise",
+        "Panoramic Atlas Mountain views",
+        "Traditional Berber breakfast",
+        "Flight certificate included"
+      ],
+      "included": [
+        "Hotel pickup at 5am",
+        "Pre-flight refreshments",
+        "1-hour balloon flight",
+        "Berber breakfast after landing",
+        "Flight certificate"
+      ],
+      "maxGroupSize": 16,
+      "languages": ["English", "French", "Arabic", "Spanish", "German"]
+    },
+    {
+      "id": "cooking-class",
+      "slug": "moroccan-cooking-class",
+      "title": "Moroccan Cooking Class",
+      "shortDescription": "Learn to prepare authentic Moroccan dishes with a local chef in a traditional riad.",
+      "fullDescription": "Master the art of Moroccan cuisine in this hands-on cooking class. Start with a guided tour of the local market to select fresh ingredients, then learn to prepare traditional dishes like tagine, couscous, and Moroccan salads under the guidance of an expert local chef.",
+      "category": "Gastronomy",
+      "price": 65,
+      "currency": "EUR",
+      "duration": "4 hours",
+      "durationMinutes": 240,
+      "rating": 4.8,
+      "reviewCount": 412,
+      "image": "activity-cooking",
+      "highlights": [
+        "Guided market tour",
+        "Hands-on cooking experience",
+        "Learn 3-4 traditional recipes",
+        "Enjoy your creations for lunch"
+      ],
+      "included": [
+        "Market tour with chef",
+        "All ingredients and equipment",
+        "Recipe booklet to take home",
+        "Full meal and drinks",
+        "Cooking certificate"
+      ],
+      "maxGroupSize": 10,
+      "languages": ["English", "French", "Arabic"]
+    }
+  ],
+  "excursions": [
+    {
+      "id": "sahara-desert",
+      "slug": "sahara-desert-camel-trek",
+      "title": "Sahara Desert & Camel Trek",
+      "shortDescription": "Journey to the Sahara for an unforgettable desert experience with camel trekking.",
+      "fullDescription": "Embark on a magical journey to the Sahara Desert. Cross the dramatic landscapes of the Atlas Mountains, visit the stunning Ait Benhaddou kasbah, and spend a night in a luxury desert camp. Experience a sunset camel trek across golden dunes and dine under a blanket of stars.",
+      "category": "Multi-day",
+      "price": 220,
+      "currency": "EUR",
+      "duration": "3 days",
+      "durationMinutes": 4320,
+      "rating": 4.9,
+      "reviewCount": 623,
+      "image": "excursion-desert",
+      "highlights": [
+        "Cross the High Atlas Mountains",
+        "Visit Ait Benhaddou UNESCO site",
+        "Sunset camel trek in dunes",
+        "Night in luxury desert camp"
+      ],
+      "included": [
+        "4x4 transport with AC",
+        "Professional guide",
+        "All meals included",
+        "Desert camp accommodation",
+        "Camel trek",
+        "Berber entertainment"
+      ],
+      "maxGroupSize": 15,
+      "languages": ["English", "French", "Arabic", "Spanish"]
+    },
+    {
+      "id": "ouzoud-waterfalls",
+      "slug": "ouzoud-waterfalls-day-trip",
+      "title": "Ouzoud Waterfalls Day Trip",
+      "shortDescription": "Visit Morocco's most spectacular waterfalls and enjoy a boat ride to the cascades.",
+      "fullDescription": "Discover the breathtaking Ouzoud Waterfalls, the highest in North Africa. Take a boat ride to the base of the 110-meter cascades, spot wild Barbary macaques, and enjoy a traditional tagine lunch with stunning views. A perfect escape from the city heat.",
+      "category": "Day Trip",
+      "price": 35,
+      "currency": "EUR",
+      "duration": "Full day",
+      "durationMinutes": 600,
+      "rating": 4.7,
+      "reviewCount": 856,
+      "image": "excursion-ouzoud",
+      "highlights": [
+        "110m cascading waterfalls",
+        "Boat ride to the falls",
+        "Wild monkey sightings",
+        "Traditional tagine lunch"
+      ],
+      "included": [
+        "Air-conditioned minibus",
+        "English-speaking guide",
+        "Boat ride",
+        "Free time to explore",
+        "Lunch at restaurant with view"
+      ],
+      "maxGroupSize": 18,
+      "languages": ["English", "French", "Arabic", "Spanish"]
+    },
+    {
+      "id": "essaouira",
+      "slug": "essaouira-coastal-escape",
+      "title": "Essaouira Coastal Escape",
+      "shortDescription": "Explore the charming coastal town of Essaouira with its art galleries and fresh seafood.",
+      "fullDescription": "Escape to the enchanting coastal town of Essaouira, a UNESCO World Heritage site. Wander through the blue and white medina, browse local art galleries, enjoy fresh seafood at the port, and relax on the beautiful beach. Optional camel ride on the beach available.",
+      "category": "Day Trip",
+      "price": 30,
+      "currency": "EUR",
+      "duration": "Full day",
+      "durationMinutes": 660,
+      "rating": 4.8,
+      "reviewCount": 734,
+      "image": "excursion-essaouira",
+      "highlights": [
+        "UNESCO World Heritage medina",
+        "Fresh seafood at the port",
+        "Art galleries and souks",
+        "Optional beach camel ride"
+      ],
+      "included": [
+        "Comfortable transport",
+        "English-speaking driver",
+        "Free time to explore",
+        "Restaurant recommendations"
+      ],
+      "maxGroupSize": 20,
+      "languages": ["English", "French", "Arabic"]
+    },
+    {
+      "id": "atlas-mountains",
+      "slug": "atlas-mountains-berber-villages",
+      "title": "Atlas Mountains & Berber Villages",
+      "shortDescription": "Trek through stunning mountain landscapes and visit traditional Berber villages.",
+      "fullDescription": "Discover the majestic Atlas Mountains on this scenic day trip. Trek through beautiful valleys, visit traditional Berber villages, and enjoy lunch with a local family. Take in breathtaking views and learn about the fascinating Berber culture and traditions.",
+      "category": "Day Trip",
+      "price": 45,
+      "currency": "EUR",
+      "duration": "Full day",
+      "durationMinutes": 540,
+      "rating": 4.8,
+      "reviewCount": 567,
+      "image": "excursion-atlas",
+      "highlights": [
+        "Scenic mountain drive",
+        "Visit Imlil valley",
+        "Traditional Berber lunch",
+        "Optional mule ride"
+      ],
+      "included": [
+        "4x4 transport",
+        "Professional mountain guide",
+        "Traditional lunch with family",
+        "Mint tea welcome",
+        "Entrance fees"
+      ],
+      "maxGroupSize": 12,
+      "languages": ["English", "French", "Arabic", "Spanish", "German"]
+    }
+  ],
+  "categories": ["Adventure", "Wellness", "Gastronomy", "Day Trip", "Multi-day"],
+  "reviews": [
+    {
+      "id": 1,
+      "author": "Sarah M.",
+      "location": "London, UK",
+      "rating": 5,
+      "date": "2025-12-15",
+      "title": "Unforgettable desert experience!",
+      "content": "The Sahara Desert excursion was absolutely magical. Our guide was incredibly knowledgeable and the desert camp exceeded all expectations. The camel trek at sunset was the highlight of our Morocco trip!",
+      "activityId": "sahara-desert",
+      "tripAdvisorLink": "https://tripadvisor.com"
+    },
+    {
+      "id": 2,
+      "author": "Jean-Pierre L.",
+      "location": "Paris, France",
+      "rating": 5,
+      "date": "2025-12-10",
+      "title": "Best cooking class ever",
+      "content": "We learned so much about Moroccan cuisine! The market tour was fascinating and our chef was patient and fun. We've already made tagine at home twice since returning.",
+      "activityId": "cooking-class",
+      "tripAdvisorLink": "https://tripadvisor.com"
+    },
+    {
+      "id": 3,
+      "author": "Michael R.",
+      "location": "New York, USA",
+      "rating": 5,
+      "date": "2025-12-08",
+      "title": "Incredible balloon ride",
+      "content": "Waking up early was so worth it! The views of the Atlas Mountains at sunrise were breathtaking. Very professional team and the breakfast afterward was delicious.",
+      "activityId": "hot-air-balloon",
+      "tripAdvisorLink": "https://tripadvisor.com"
+    },
+    {
+      "id": 4,
+      "author": "Emma K.",
+      "location": "Sydney, Australia",
+      "rating": 5,
+      "date": "2025-12-01",
+      "title": "Pure relaxation",
+      "content": "The hammam experience was exactly what we needed. The staff was wonderful and the argan oil massage left me feeling completely rejuvenated. Highly recommend!",
+      "activityId": "hammam-spa",
+      "tripAdvisorLink": "https://tripadvisor.com"
+    }
+  ]
+}
