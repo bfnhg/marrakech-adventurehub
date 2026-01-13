@@ -3,7 +3,8 @@ import { Search, MapPin, Calendar, Users } from 'lucide-react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import heroImage from '@/assets/hero-marrakech.jpg';
+import { ThreeDMarquee } from '@/components/ui/3d-marquee';
+import { images } from '@/lib/images';
 
 export function Hero() {
   const navigate = useNavigate();
@@ -14,23 +15,30 @@ export function Hero() {
     navigate(`/activities?search=${encodeURIComponent(searchQuery)}`);
   };
 
+  // Get all activity and excursion images for the marquee
+  const marqueeImages = [
+    images['activity-quad'],
+    images['excursion-desert'],
+    images['activity-hammam'],
+    images['excursion-atlas'],
+    images['activity-balloon'],
+    images['excursion-essaouira'],
+    images['activity-cooking'],
+    images['excursion-ouzoud'],
+    // Duplicate for more variety in the grid
+    images['activity-quad'],
+    images['excursion-desert'],
+    images['activity-hammam'],
+    images['excursion-atlas'],
+  ];
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Marrakech cityscape at golden hour with Koutoubia Mosque"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-night/60 via-night/40 to-night/80" />
-      </div>
-
+    <section className="relative min-h-screen flex flex-col overflow-hidden bg-gradient-to-b from-night via-night/95 to-background">
       {/* Moroccan Pattern Overlay */}
-      <div className="absolute inset-0 moroccan-pattern opacity-20" />
+      <div className="absolute inset-0 moroccan-pattern opacity-10" />
 
-      {/* Content */}
-      <div className="relative z-10 container-tourism text-center text-primary-foreground">
+      {/* Top Content */}
+      <div className="relative z-10 container-tourism text-center pt-32 pb-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -41,17 +49,17 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
-            className="inline-block px-4 py-1.5 rounded-full bg-primary/20 backdrop-blur-sm border border-primary/30 text-sm font-medium mb-6"
+            className="inline-block px-4 py-1.5 rounded-full bg-primary/20 backdrop-blur-sm border border-primary/30 text-sm font-medium mb-6 text-primary-foreground"
           >
             ✨ #1 Rated Tours in Marrakech
           </motion.span>
 
-          <h1 className="heading-display mb-6">
+          <h1 className="heading-display mb-6 text-primary-foreground">
             Discover the Magic of{' '}
             <span className="text-gold">Marrakech</span>
           </h1>
 
-          <p className="text-body-lg text-primary-foreground/80 max-w-2xl mx-auto mb-10">
+          <p className="text-body-lg text-primary-foreground/80 max-w-2xl mx-auto mb-8">
             Unforgettable adventures await. From thrilling desert excursions to authentic cultural experiences, 
             we curate the finest activities in Morocco's red city.
           </p>
@@ -80,59 +88,63 @@ export function Hero() {
               </Button>
             </div>
           </motion.form>
-
-          {/* Quick Stats */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.8 }}
-            className="mt-12 flex flex-wrap justify-center gap-8 md:gap-16"
-          >
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                <MapPin className="w-6 h-6 text-gold" />
-              </div>
-              <div className="text-left">
-                <p className="font-bold text-2xl">50+</p>
-                <p className="text-sm text-primary-foreground/70">Unique Experiences</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                <Users className="w-6 h-6 text-gold" />
-              </div>
-              <div className="text-left">
-                <p className="font-bold text-2xl">10K+</p>
-                <p className="text-sm text-primary-foreground/70">Happy Travelers</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                <Calendar className="w-6 h-6 text-gold" />
-              </div>
-              <div className="text-left">
-                <p className="font-bold text-2xl">5+</p>
-                <p className="text-sm text-primary-foreground/70">Years Experience</p>
-              </div>
-            </div>
-          </motion.div>
         </motion.div>
       </div>
 
-      {/* Scroll Indicator */}
+      {/* 3D Marquee Grid */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.6, duration: 0.8 }}
+        className="relative flex-1 mt-8"
+      >
+        <ThreeDMarquee images={marqueeImages} className="h-[500px] md:h-[550px]" />
+        
+        {/* Gradient overlays for smooth edges */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-night to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+          <div className="absolute top-0 bottom-0 left-0 w-32 bg-gradient-to-r from-night to-transparent" />
+          <div className="absolute top-0 bottom-0 right-0 w-32 bg-gradient-to-l from-night to-transparent" />
+        </div>
+      </motion.div>
+
+      {/* Quick Stats - Now at bottom */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+        transition={{ delay: 0.8 }}
+        className="relative z-10 pb-12 pt-4"
       >
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ repeat: Infinity, duration: 2 }}
-          className="w-6 h-10 rounded-full border-2 border-primary-foreground/50 flex items-start justify-center p-2"
-        >
-          <div className="w-1.5 h-3 rounded-full bg-primary-foreground/70" />
-        </motion.div>
+        <div className="container-tourism flex flex-wrap justify-center gap-8 md:gap-16">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+              <MapPin className="w-6 h-6 text-gold" />
+            </div>
+            <div className="text-left">
+              <p className="font-bold text-2xl text-foreground">50+</p>
+              <p className="text-sm text-muted-foreground">Unique Experiences</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+              <Users className="w-6 h-6 text-gold" />
+            </div>
+            <div className="text-left">
+              <p className="font-bold text-2xl text-foreground">10K+</p>
+              <p className="text-sm text-muted-foreground">Happy Travelers</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+              <Calendar className="w-6 h-6 text-gold" />
+            </div>
+            <div className="text-left">
+              <p className="font-bold text-2xl text-foreground">5+</p>
+              <p className="text-sm text-muted-foreground">Years Experience</p>
+            </div>
+          </div>
+        </div>
       </motion.div>
     </section>
   );
