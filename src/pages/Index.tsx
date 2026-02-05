@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/navigation/Navbar';
@@ -10,12 +10,18 @@ import { ReservationModal } from '@/components/forms/ReservationModal';
 import { SEOHead, generateOrganizationSchema } from '@/components/seo/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Activity } from '@/types/activity';
+import { ActivitiesScrollSection } from '@/components/sections/ActivitiesScrollSection';
 import { ArrowRight, Shield, Clock, Star, HeartHandshake } from 'lucide-react';
 import activitiesData from '@/data/activities.json';
+import { CitiesScrollSection } from '@/components/sections/CitiesScrollSection';
+import { M } from 'vitest/dist/chunks/reporters.d.BFLkQcL6.js';
+import { MarrakechAdventureGallery } from '@/components/sections/MarrakechAdventureGallery';
 
 const Index = () => {
   const [selectedActivity, setSelectedActivity] = useState<Activity | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
+  const lastScrollY = useRef(0);
 
   const activities = activitiesData.activities as Activity[];
   const excursions = activitiesData.excursions as Activity[];
@@ -48,6 +54,20 @@ const Index = () => {
     },
   ];
 
+  useEffect(() => {
+    const onScroll = () => {
+      const currentY = window.scrollY;
+      if (currentY === 0) {
+        setShowNavbar(true); // en haut : visible
+      } else {
+        setShowNavbar(currentY < lastScrollY.current); // true si on remonte, false si on descend
+      }
+      lastScrollY.current = currentY;
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
   return (
     <>
       <SEOHead
@@ -57,13 +77,21 @@ const Index = () => {
         structuredData={generateOrganizationSchema()}
       />
 
-      <Navbar />
+      
 
-      <main>
+      <div className={`fixed top-0 left-0 w-full z-50 h-24 transition-transform duration-300 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
+        <Navbar />
+      </div>
+      <main className="relative pt-24">
         {/* Hero Section */}
         <Hero />
+          {/* 🔥 Aceternity Container Scroll Animation */}
+     
 
+{/* <CitiesScrollSection /> */}
+<MarrakechAdventureGallery />
         {/* Features Section */}
+        {/* <LayoutTextFlipDemo /> */}
         <section className="section-padding bg-background">
           <div className="container-tourism">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
@@ -98,7 +126,7 @@ const Index = () => {
             >
               <div>
                 <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-                  🎯 Popular Activities
+                   Popular Activities
                 </span>
                 <h2 className="heading-section">Unforgettable Experiences</h2>
               </div>
@@ -135,7 +163,7 @@ const Index = () => {
             >
               <div>
                 <span className="inline-block px-4 py-1.5 rounded-full bg-palm/10 text-palm text-sm font-medium mb-4">
-                  🗺️ Day Trips & Excursions
+               Day Trips & Excursions
                 </span>
                 <h2 className="heading-section">Explore Beyond Marrakech</h2>
               </div>

@@ -31,9 +31,9 @@ export function Hero() {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-night via-night/95 to-background">
+    <section className="relative min-h-screen pt-24 flex items-center justify-center overflow-hidden bg-night text-white">
       {/* Moroccan Pattern Overlay */}
-      <div className="absolute inset-0 moroccan-pattern opacity-10" />
+      <div className="absolute inset-0 moroccan-pattern opacity-10 justify-center items-center" />
 
       {/* 3D Marquee Grid - Background */}
       <div className="absolute inset-0">
@@ -49,7 +49,7 @@ export function Hero() {
       </div>
 
       {/* Centered Search Bar */}
-      <motion.form
+      {/* <motion.form
         onSubmit={handleSearch}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -71,7 +71,7 @@ export function Hero() {
             Explore Now
           </Button>
         </div>
-      </motion.form>
+      </motion.form> */}
     </section>
   );
 }
