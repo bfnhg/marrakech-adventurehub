@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
+import { Feature, motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Navbar } from '@/components/navigation/Navbar';
 import { Footer } from '@/components/navigation/Footer';
@@ -7,6 +7,7 @@ import { Hero } from '@/components/sections/Hero';
 import { ActivityCard } from '@/components/cards/ActivityCard';
 import { ReviewsSection } from '@/components/sections/ReviewsSection';
 import { ReservationModal } from '@/components/forms/ReservationModal';
+import { FeaturesSection } from '@/components/sections/FeaturesSection';
 import { SEOHead, generateOrganizationSchema } from '@/components/seo/SEOHead';
 import { Button } from '@/components/ui/button';
 import { Activity } from '@/types/activity';
@@ -31,28 +32,7 @@ const Index = () => {
     setIsModalOpen(true);
   };
 
-  const features = [
-    {
-      icon: Shield,
-      title: 'Safe & Secure',
-      description: 'All our experiences are vetted for safety and quality.',
-    },
-    {
-      icon: Clock,
-      title: 'Flexible Booking',
-      description: 'Free cancellation up to 24 hours before the activity.',
-    },
-    {
-      icon: Star,
-      title: 'Expert Guides',
-      description: 'Local guides with years of experience and knowledge.',
-    },
-    {
-      icon: HeartHandshake,
-      title: 'Best Price Guarantee',
-      description: "Find a lower price? We'll match it.",
-    },
-  ];
+ 
 
   useEffect(() => {
     const onScroll = () => {
@@ -94,24 +74,7 @@ const Index = () => {
         {/* <LayoutTextFlipDemo /> */}
         <section className="section-padding bg-background">
           <div className="container-tourism">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-              {features.map((feature, index) => (
-                <motion.div
-                  key={feature.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="text-center p-6"
-                >
-                  <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                    <feature.icon className="w-7 h-7 text-primary" />
-                  </div>
-                  <h3 className="font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-sm text-muted-foreground">{feature.description}</p>
-                </motion.div>
-              ))}
-            </div>
+           <FeaturesSection />
           </div>
         </section>
 
